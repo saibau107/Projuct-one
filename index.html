@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVV Clinic - Ayurvedic Healing Center</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(20,83,45,0.9) 0%, rgba(56,161,105,0.9) 100%);
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .testimonial-card {
+            transition: all 0.3s ease;
+        }
+        .testimonial-card:hover {
+            transform: scale(1.03);
+        }
+        .nav-link {
+            position: relative;
+        }
+        .nav-link:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #38a169;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover:after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-leaf text-green-600 text-2xl"></i>
+                <a href="#" class="text-xl font-bold text-green-800">SVV Clinic</a>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#about" class="nav-link text-gray-700 hover:text-green-600">About</a>
+                <a href="#services" class="nav-link text-gray-700 hover:text-green-600">Services</a>
+                <a href="#testimonials" class="nav-link text-gray-700 hover:text-green-600">Testimonials</a>
+                <a href="#videos" class="nav-link text-gray-700 hover:text-green-600">Video Library</a>
+                <a href="#blog" class="nav-link text-gray-700 hover:text-green-600">Blog</a>
+                <a href="#contact" class="nav-link text-gray-700 hover:text-green-600">Contact</a>
+            </div>
+            <button class="md:hidden text-gray-700 focus:outline-none">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-gradient text-white py-20">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Holistic Ayurvedic Healing</h1>
+                <p class="text-xl mb-8">Where ancient wisdom meets modern healthcare for complete well-being</p>
+                <a href="#contact" class="bg-white text-green-700 px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition duration-300 inline-block">Book Consultation</a>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="https://www.svvclinic.com/About-Dr.webp" alt="Dr. Vireesha Bogireddy" class="rounded-lg shadow-xl max-w-full h-auto md:max-w-md">
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-green-800 mb-4">About SVV Clinic</h2>
+                <div class="w-20 h-1 bg-green-600 mx-auto"></div>
+            </div>
+            
+            <div class="flex flex-col md:flex-row items-center mb-16">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <h3 class="text-2xl font-bold text-green-700 mb-4">Dr. Vireesha Bogireddy</h3>
+                    <p class="text-gray-700 mb-4">Welcome to SVV Clinic, where the ancient art of Ayurveda meets modern healthcare, creating a sanctuary for holistic well-being. Nestled in the vibrant city of Hyderabad, SVV Clinic is the manifestation of a rich legacy passed down through generations.</p>
+                    <p class="text-gray-700">SVV Clinic, a beacon of healing and well-being, was founded by the visionary Dr. Nagireddy Bogireddy over 30 years ago in the picturesque town of Pen, Raigad District, Maharashtra. Driven by a passion for holistic healthcare, Dr. Nagireddy embarked on a journey that would leave an indelible mark on the field of Ayurvedic medicine.</p>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="https://www.svvclinic.com/About-Dr.webp" alt="Dr. Vireesha Bogireddy" class="rounded-lg shadow-lg w-full">
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="text-4xl font-bold text-green-600 mb-2">300,000+</div>
+                    <div class="text-gray-600 font-medium">Happy Patients</div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="text-4xl font-bold text-green-600 mb-2">1,500+</div>
+                    <div class="text-gray-600 font-medium">Procedures</div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="text-4xl font-bold text-green-600 mb-2">30+</div>
+                    <div class="text-gray-600 font-medium">Years of Experience</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-green-800 mb-4">Our Services</h2>
+                <div class="w-20 h-1 bg-green-600 mx-auto"></div>
+                <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Get back to living your best life – Award-winning surgeon, Dr. Vireesha, can help you overcome Anorectal issues.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service Card 1 -->
+                <div class="service-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="https://www.svvclinic.com/Piles.webp" alt="Piles Treatment" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-green-700 mb-2">Piles</h3>
+                        <p class="text-gray-600">Piles, also known as hemorrhoids, are swollen blood vessels located in the rectum and anus.</p>
+                        <button class="mt-4 text-green-600 font-semibold hover:text-green-800 transition duration-300">Learn More <i class="fas fa-arrow-right ml-1"></i></button>
+                    </div>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="service-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="https://www.svvclinic.com/Fissure.webp" alt="Fissure Treatment" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-green-700 mb-2">Fissure</h3>
+                        <p class="text-gray-600">An anal fissure is a small tear or split in the mucous membrane lining of the anus or lower rectum.</p>
+                        <button class="mt-4 text-green-600 font-semibold hover:text-green-800 transition duration-300">Learn More <i class="fas fa-arrow-right ml-1"></i></button>
+                    </div>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="service-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="https://www.svvclinic.com/obsteric.webp" alt="Obstetric Fistula Treatment" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-green-700 mb-2">Obstetric Fistula</h3>
+                        <p class="text-gray-600">Obstetric fistula is a severe childbirth injury that occurs during prolonged or obstructed labor.</p>
+                        <button class="mt-4 text-green-600 font-semibold hover:text-green-800 transition duration-300">Learn More <i class="fas fa-arrow-right ml-1"></i></button>
+                    </div>
+                </div>
+
+                <!-- Service Card 4 -->
+                <div class="service-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="https://www.svvclinic.com/Anal.webp" alt="Anal Fistula Treatment" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-green-700 mb-2">Anal Fistula</h3>
+                        <p class="text-gray-600">An anal fistula is an abnormal tunnel-like passage that develops between the inner lining of the anal canal or rectum and the skin around the anus.</p>
+                        <button class="mt-4 text-green-600 font-semibold hover:text-green-800 transition duration-300">Learn More <i class="fas fa-arrow-right ml-1"></i></button>
+                    </div>
+                </div>
+
+                <!-- Service Card 5 -->
+                <div class="service-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="https://www.svvclinic.com/constipation.webp" alt="Constipation Treatment" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-green-700 mb-2">Constipation</h3>
+                        <p class="text-gray-600">Constipation refers to irregular bowel movements or difficulty in passing stools.</p>
+                        <button class="mt-4 text-green-600 font-semibold hover:text-green-800 transition duration-300">Learn More <i class="fas fa-arrow-right ml-1"></i></button>
+                    </div>
+                </div>
+
+                <!-- Service Card 6 -->
+                <div class="service-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="https://www.svvclinic.com/kshar.webp" alt="Kshar Sutra Karma Procedure" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-green-700 mb-2">Kshar Sutra Karma Procedure</h3>
+                        <p class="text-gray-600">Anorectal cancers include cancer in the esophagus, stomach, liver, pancreas, colon, and rectum.</p>
+                        <button class="mt-4 text-green-600 font-semibold hover:text-green-800 transition duration-300">Learn More <i class="fas fa-arrow-right ml-1"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Library Section -->
+    <section id="videos" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-green-800 mb-4">Video Library</h2>
+                <div class="w-20 h-1 bg-green-600 mx-auto"></div>
+                <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Educational videos about our treatments and procedures</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Video 1 -->
+                <div class="bg-gray-100 rounded-lg overflow-hidden">
+                    <div class="aspect-w-16 aspect-h-9 bg-gray-300 flex items-center justify-center">
+                        <i class="fas fa-play text-4xl text-green-600"></i>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold text-green-700 mb-2">Understanding Piles</h3>
+                        <p class="text-gray-600">Learn about causes and treatments for piles</p>
+                    </div>
+                </div>
+
+                <!-- Video 2 -->
+                <div class="bg-gray-100 rounded-lg overflow-hidden">
+                    <div class="aspect-w-16 aspect-h-9 bg-gray-300 flex items-center justify-center">
+                        <i class="fas fa-play text-4xl text-green-600"></i>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold text-green-700 mb-2">Kshar Sutra Procedure</h3>
+                        <p class="text-gray-600">See how this traditional treatment works</p>
+                    </div>
+                </div>
+
+                <!-- Video 3 -->
+                <div class="bg-gray-100 rounded-lg overflow-hidden">
+                    <div class="aspect-w-16 aspect-h-9 bg-gray-300 flex items-center justify-center">
+                        <i class="fas fa-play text-4xl text-green-600"></i>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold text-green-700 mb-2">Patient Success Stories</h3>
+                        <p class="text-gray-600">Hear from our satisfied patients</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-green-800 mb-4">Patient Testimonials</h2>
+                <div class="w-20 h-1 bg-green-600 mx-auto"></div>
+                <p class="text-gray-600 mt-4 max-w-2xl mx-auto">We have hundreds of satisfied patients who have successfully returned to their normal life with our treatment.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <img src="https://www.svvclinic.com/userpic.png" alt="Patient" class="w-12 h-12 rounded-full object-cover">
+                        <div class="ml-4">
+                            <h4 class="font-bold text-gray-800">Yashwant Moningi</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Good doctor. She is very simple and gentle in her behavior. She will give sufficient time to each patient. She studies the patient and disease meticulously, and also I visited multiple clinics and hospitals this is the clinics which is valid for money, Overall each and every member of the clinic responds well and guide us well."</p>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <img src="https://www.svvclinic.com/userpic.png" alt="Patient" class="w-12 h-12 rounded-full object-cover">
+                        <div class="ml-4">
+                            <h4 class="font-bold text-gray-800">Rajesh Kumar</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Dr. Vireesha's treatment was life-changing for me. After suffering from piles for years, her Ayurvedic approach provided relief without surgery. The staff is very caring and the clinic environment is peaceful."</p>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <img src="https://www.svvclinic.com/userpic.png" alt="Patient" class="w-12 h-12 rounded-full object-cover">
+                        <div class="ml-4">
+                            <h4 class="font-bold text-gray-800">Priya Sharma</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"The Kshar Sutra procedure I underwent here was completely painless and effective. Dr. Vireesha explained everything clearly and made me comfortable throughout the treatment. Highly recommended for anyone with fistula problems."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-green-800 mb-4">Our Blog</h2>
+                <div class="w-20 h-1 bg-green-600 mx-auto"></div>
+                <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Latest articles on Ayurvedic health and wellness</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Blog Post 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md">
+                    <img src="https://www.svvclinic.com/blog1.webp" alt="Ayurvedic Diet" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-green-700 mb-2">Ayurvedic Diet for Digestive Health</h3>
+                        <p class="text-gray-600 mb-4">Learn how to improve your digestion naturally with Ayurvedic principles...</p>
+                        <a href="#" class="text-green-600 font-semibold hover:text-green-800">Read More →</a>
+                    </div>
+                </div>
+
+                <!-- Blog Post 2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md">
+                    <img src="https://www.svvclinic.com/blog2.webp" alt="Piles Prevention" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-green-700 mb-2">5 Ways to Prevent Piles Naturally</h3>
+                        <p class="text-gray-600 mb-4">Simple lifestyle changes that can help you avoid painful hemorrhoids...</p>
+                        <a href="#" class="text-green-600 font-semibold hover:text-green-800">Read More →</a>
+                    </div>
+                </div>
+
+                <!-- Blog Post 3 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md">
+                    <img src="https://www.svvclinic.com/blog3.webp" alt="Stress Management" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-green-700 mb-2">Ayurvedic Stress Management Techniques</h3>
+                        <p class="text-gray-600 mb-4">Ancient wisdom for modern stress relief and mental well-being...</p>
+                        <a href="#" class="text-green-600 font-semibold hover:text-green-800">Read More →</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-8">
+                <a href="#" class="inline-block bg-green-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-green-700 transition duration-300">View All Articles</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-green-700 text-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Contact Us</h2>
+                <div class="w-20 h-1 bg-white mx-auto"></div>
+            </div>
+
+            <div class="flex flex-col md:flex-row gap-8">
+                <div class="md:w-1/2">
+                    <h3 class="text-xl font-bold mb-4">Book an Appointment</h3>
+                    <form class="space-y-4">
+                        <div>
+                            <label for="name" class="block mb-1">Full Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-2 rounded text-gray-800 focus:outline-none focus:ring-2 focus:ring-green-300">
+                        </div>
+                        <div>
+                            <label for="email" class="block mb-1">Email</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 rounded text-gray-800 focus:outline-none focus:ring-2 focus:ring-green-300">
+                        </div>
+                        <div>
+                            <label for="phone" class="block mb-1">Phone</label>
+                            <input type="tel" id="phone" class="w-full px-4 py-2 rounded text-gray-800 focus:outline-none focus:ring-2 focus:ring-green-300">
+                        </div>
+                        <div>
+                            <label for="service" class="block mb-1">Service Interested In</label>
+                            <select id="service" class="w-full px-4 py-2 rounded text-gray-800 focus:outline-none focus:ring-2 focus:ring-green-300">
+                                <option>Piles Treatment</option>
+                                <option>Fissure Treatment</option>
+                                <option>Obstetric Fistula</option>
+                                <option>Anal Fistula</option>
+                                <option>Constipation</option>
+                                <option>Kshar Sutra Karma</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="message" class="block mb-1">Message</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-2 rounded text-gray-800 focus:outline-none focus:ring-2 focus:ring-green-300"></textarea>
+                        </div>
+                        <button type="submit" class="bg-white text-green-700 px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition duration-300">Submit</button>
+                    </form>
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-xl font-bold mb-4">Clinic Information</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-green-300"></i>
+                            <div>
+                                <h4 class="font-semibold">Address</h4>
+                                <p>123 Ayurveda Lane, Hyderabad, Telangana 500001</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-phone-alt mt-1 mr-3 text-green-300"></i>
+                            <div>
+                                <h4 class="font-semibold">Phone</h4>
+                                <p>+91 98765 43210</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-envelope mt-1 mr-3 text-green-300"></i>
+                            <div>
+                                <h4 class="font-semibold">Email</h4>
+                                <p>info@svvclinic.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-clock mt-1 mr-3 text-green-300"></i>
+                            <div>
+                                <h4 class="font-semibold">Working Hours</h4>
+                                <p>Monday to Saturday: 9:00 AM - 6:00 PM</p>
+                                <p>Sunday: Closed</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-8">
+                        <h4 class="font-semibold mb-2">Follow Us</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-white hover:text-green-300 text-xl"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="text-white hover:text-green-300 text-xl"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="text-white hover:text-green-300 text-xl"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="text-white hover:text-green-300 text-xl"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-green-900 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <div class="flex items-center space-x-2">
+                        <i class="fas fa-leaf text-green-400 text-2xl"></i>
+                        <span class="text-xl font-bold">SVV Clinic</span>
+                    </div>
+                    <p class="mt-2 text-green-300">Holistic Ayurvedic Healing Center</p>
+                </div>
+                <div class="text-center md:text-right">
+                    <p>&copy; 2025 SVV Clinic. All rights reserved.</p>
+                    <div class="mt-2">
+                        <a href="#" class="text-green-300 hover:text-white mx-2">Privacy Policy</a>
+                        <a href="#" class="text-green-300 hover:text-white mx-2">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="fixed bottom-6 right-6 bg-green-600 text-white p-3 rounded-full shadow-lg opacity-0 invisible transition-all duration-300">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // Back to Top Button
+        const backToTopButton = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.remove('opacity-0', 'invisible');
+                backToTopButton.classList.add('opacity-100', 'visible');
+            } else {
+                backToTopButton.classList.remove('opacity-100', 'visible');
+                backToTopButton.classList.add('opacity-0', 'invisible');
+            }
+        });
+
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.querySelector('button.md\\:hidden');
+        const navLinks = document.querySelector('.hidden.md\\:flex');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            navLinks.classList.toggle('hidden');
+            navLinks.classList.toggle('flex');
+            navLinks.classList.toggle('flex-col');
+            navLinks.classList.toggle('absolute');
+            navLinks.classList.toggle('top-16');
+            navLinks.classList.toggle('left-0');
+            navLinks.classList.toggle('right-0');
+            navLinks.classList.toggle('bg-white');
+            navLinks.classList.toggle('shadow-md');
+            navLinks.classList.toggle('p-4');
+            navLinks.classList.toggle('space-y-4');
+            navLinks.classList.toggle('space-x-8');
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                
+                // Close mobile menu if open
+                if (!navLinks.classList.contains('hidden')) {
+                    mobileMenuButton.click();
+                }
+            });
+        });
+    </script>
+<p style="border-radius: 8px; text-align: center; font-size: 12px; color: #fff; margin-top: 16px;position: fixed; left: 8px; bottom: 8px; z-index: 10; background: rgba(0, 0, 0, 0.8); padding: 4px 8px;">Made with <img src="https://enzostvs-deepsite.hf.space/logo.svg" alt="DeepSite Logo" style="width: 16px; height: 16px; vertical-align: middle;display:inline-block;margin-right:3px;filter:brightness(0) invert(1);"><a href="https://enzostvs-deepsite.hf.space" style="color: #fff;text-decoration: underline;" target="_blank" >DeepSite</a> - 🧬 <a href="https://enzostvs-deepsite.hf.space?remix=SAIABABU/https-github-com-saibau107" style="color: #fff;text-decoration: underline;" target="_blank" >Remix</a></p></body>
+</html>
